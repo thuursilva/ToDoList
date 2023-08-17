@@ -1,15 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 :root{
     --bg-color:#f1f5f8;
     --bg-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
     --bg-title: rgba(0,255,196,0.7);
-    --input-border-color:#ea95e0;
+    --input-border-color:#4bf7c4;
     --input-text-color: rgb(63, 62, 65, 0.7);
     --span-border-color:#494a4b;
     --line-hover:#24bffb;
-    --fonte: "Gochi Hand", cursive;
+    --fonte: 'Itim', cursive;
     --text-color: black;
 }
 
@@ -119,11 +119,19 @@ body{
 
 .toDoList li:hover{
     /*inserindo cor de contorno no texto*/
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: var(--line-hover);
     cursor: pointer;
 }
 
 .done{
     text-decoration: line-through;
+}
+
+.dark-mode{
+    --bg-color:#292929;
+    --text-color: white;
+    --span-border-color:#717274;
+    --input-text-color: rgba(202, 201, 204, 0.7);
+    --bg-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
 }

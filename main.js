@@ -79,3 +79,16 @@ ul.addEventListener("click", e =>{
     item.classList.add("done");
 })
 
+/*
+//detectando dark mode
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", darkMode);
+
+//função dark mode
+function darkMode{
+    document.body.classList.toggle("dark-mode");
+}*/
+
