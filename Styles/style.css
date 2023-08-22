@@ -85,6 +85,7 @@ body{
     transform: rotate(4deg);
     transform-origin: center;
     font-family: var(--fonte);
+    color: var(--text-color);
     text-decoration: none;
     padding-bottom: 3px;
     border-radius: 5px;
@@ -132,6 +133,8 @@ body{
     --bg-color:#292929;
     --text-color: white;
     --span-border-color:#717274;
-    --input-text-color: rgba(202, 201, 204, 0.7);
-    --bg-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+    --input-text-color: rgba(255, 255, 255, 0.932);
+    --bg-image: radial-gradient(#808080 7.2%, transparent 0);
+    --bg-title: rgba(8, 201, 156, 0.7);
+    --input-border-color:#08f3ad;
 }

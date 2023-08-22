@@ -79,16 +79,26 @@ ul.addEventListener("click", e =>{
     item.classList.add("done");
 })
 
-/*
-//detectando dark mode
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 
+//detectando dark mode no navegador
+//window.matchMedia('(prefers-color-scheme: dark)');
+const dark = window.matchMedia("(prefers-color-scheme: dark)");
+
+const body = document.querySelector("body");
+
+//alterando tema
+if(dark.matches){
+    body.classList.add("dark-mode");
 }
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", darkMode);
+//adicionando listener para detectar mudanças no tema da página
+dark.addListener((event) => {
+    if(event.matches){
+        body.classList.add("dark-mode");
+    }else{
+        body.classList.remove("dark-mode");
+    }
+})
 
-//função dark mode
-function darkMode{
-    document.body.classList.toggle("dark-mode");
-}*/
+
 
